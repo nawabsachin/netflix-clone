@@ -1,0 +1,79 @@
+.hero {
+    height: 80vh;
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/7c0e18aa-2c95-474d-802e-7f30e75dcca4/web/IN-en-20241014-TRIFECTA-perspective_e7121311-c11e-4809-a3e6-22abffa33569_large.jpg') no-repeat center center/cover;
+    position: relative;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px; /* To offset the fixed header */
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+
+  @media (max-width: 768px){
+    .hero {
+           width: 100%;
+
+    }
+  }
+  .hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    animation: slideIn 1s ease-in-out forwards;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: textSlideIn 1.2s ease forwards;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    animation: textSlideIn 1.4s ease forwards;
+  }
+  
+  .play-button, .info-button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .play-button {
+    background-color: #e50914;
+    color: #fff;
+  }
+  
+  .info-button {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .play-button:hover, .info-button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes textSlideIn {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  

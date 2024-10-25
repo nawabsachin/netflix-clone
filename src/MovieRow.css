@@ -1,0 +1,66 @@
+/* MovieRow.css */
+
+.movie-row {
+  margin: 20px 0;
+  margin: auto;
+  display: block;
+}
+
+.movie-row h2 {
+  margin-left: 20px;
+  color: #fff;
+}
+
+.movie-thumbnails {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  overflow-x: auto;
+ 
+}
+
+.movie-thumbnail {
+  position: relative;
+  background-color: #333;
+  flex: 0 0 auto;
+  width: 220px;
+  height: 350px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.movie-thumbnail:hover {
+  transform: scale(1.1);
+}
+
+.movie-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.movie-details {
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.watch-now-button {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.watch-now-button:hover {
+  background-color: #f40612;
+}
+.movie_image{
+  width: 100%;
+}

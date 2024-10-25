@@ -1,0 +1,44 @@
+/* styles.css */
+.more-reasons {
+    display: flex;
+    flex-wrap: wrap; /* Allows the items to wrap if they exceed the container's width */
+    gap: 20px; /* Adds space between the items */
+    justify-content: center; /* Center-aligns the items */
+    padding: 20px;
+  }
+  
+  .reason {
+    display: flex;
+    flex-direction: column; /* Arranges the content vertically */
+    align-items: center; /* Centers the content horizontally */
+    justify-content: center; /* Centers the content vertically */
+    width: 250px;
+    height: 250px;
+    border: 1px solid #ccc; /* Optional border for visibility */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px;
+    background-color: #1E1426; /* Light background color */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: transform 0.3s; /* Adds a hover effect */
+  }
+  .more_h3{
+    margin-left: 165px;
+    margin-bottom: 0px;
+  }
+  
+  .reason:hover {
+    transform: scale(1.05); /* Slightly enlarges the item on hover */
+  }
+  
+  .reason h3 {
+    margin-top: -80px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .reason p {
+    font-size: 14px;
+    color: #555;
+  }
+  
